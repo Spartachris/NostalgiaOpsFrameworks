@@ -49,14 +49,14 @@ if (hasInterface) then {
 
         if ((side _attached) == (side player) && (_side) == (side player)) then {
             _currentMarkers = player getVariable ["nos_currentGroupMarkers", []];
-        
+
             _marker = createMarkerLocal [_uid, [0, 0]];
             _marker setMarkerTextLocal _unitName;
 
             if !(_color == "") then {
                 _marker setMarkerColorLocal _color;
             };
-            
+
             switch (_type) do {
                 case "infantry":    { _type = "b_inf" };
                 case "motorized":   { _type = "b_motor_inf"; };
@@ -78,9 +78,9 @@ if (hasInterface) then {
                 leader _attached;
             });
             _marker setMarkerSizeLocal [_size, _size];
-            
+
             _currentMarkers set [count _currentMarkers, [_marker, _attached]];
-            
+
             player setVariable ["nos_currentGroupMarkers", _currentMarkers];
         };
     };
@@ -90,7 +90,7 @@ if (hasInterface) then {
         _uid = _this select 0;
         _position = _this select 1;
         _side = _this select 2;
-        
+
         if (_side == side player) then {
             _uid setMarkerPosLocal _position;
         };
@@ -99,7 +99,7 @@ if (hasInterface) then {
     ["nos_createGroupMarkerLocal", {
         _this call fnc_createGroupMarkerForPlayer;
     }] call CBA_fnc_addEventHandler;
-    
+
     ["nos_createGroupMarkerLocal", {
         private ["_paramArr"];
         _paramArr = [];
@@ -110,7 +110,7 @@ if (hasInterface) then {
         } forEach _this;
         _paramArr call fnc_createGroupMarkerForPlayer;
     }] call CBA_fnc_addLocalEventHandler;
-    
+
     player addEventHandler ["Killed", {
         _this spawn {
             waitUntil { alive player };
@@ -126,7 +126,6 @@ if (hasInterface) then {
             player setPos [0, 0, 0];
         };
     }];
-    
+
     ["nos_playerInitialized", [player]] call CBA_fnc_globalEvent;
 };
-

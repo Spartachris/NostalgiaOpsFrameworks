@@ -4,8 +4,9 @@
 
 /* Optics Slots */
 ADD_WEAPON("Binocular");
+ADD_WEAPON("ItemGPS");
 
-/* Item Slots */ 
+/* Item Slots */
 ADD_WEAPON("ACE_DAGR");
 
 /* Primary Magazine Slots */

@@ -4,6 +4,7 @@
 
 /* Optics Slots */
 ADD_WEAPON("Binocular_Vector");
+ADD_WEAPON("ItemGPS");
 
 /* Item Slots */
 ADD_WEAPON("ACE_DAGR");

@@ -4,10 +4,10 @@
 
 /* Item Slots */
 ADD_WEAPON("ACRE_PRC148");
-
+ADD_WEAPON("ItemGPS");
 /* Primary Magazine Slots */
 ADD_MAGAZINE("30Rnd_556x45_Stanag", 3);
-//ADD_MAGAZINE("30Rnd_556x45_StanagSD", 7);
+/*ADD_MAGAZINE("30Rnd_556x45_StanagSD", 7);*/
 ADD_MAGAZINE("ACE_30Rnd_556x45_T_Stanag", 1);
 ADD_MAGAZINE("SmokeShell", 2);
 

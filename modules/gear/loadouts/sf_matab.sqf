@@ -4,7 +4,7 @@
 
 /* Primary Magazine Slots */
 ADD_MAGAZINE("30Rnd_556x45_Stanag", 6);
-//ADD_MAGAZINE("30Rnd_556x45_StanagSD", 7);
+/*ADD_MAGAZINE("30Rnd_556x45_StanagSD", 7);*/
 ADD_MAGAZINE("ACE_30Rnd_556x45_T_Stanag", 1);
 ADD_MAGAZINE("HandGrenade_West", 1);
 ADD_MAGAZINE("SmokeShell", 2);

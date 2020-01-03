@@ -4,6 +4,7 @@
 
 /* Optics Slots */
 ADD_WEAPON("Binocular");
+ADD_WEAPON("ItemGPS");
 
 /* Item Slots */
 ADD_WEAPON("ItemGPS");
@@ -30,4 +31,3 @@ ADD_MAGAZINE_RUCK("ACE_Knicklicht_B", 4);
 /* Weapon Slots */
 ADD_WEAPON("ACE_AKM_GL");
 ADD_WEAPON("revolver_EP1");
-

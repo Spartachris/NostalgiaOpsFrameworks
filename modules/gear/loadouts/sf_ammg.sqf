@@ -4,7 +4,7 @@
 
 /* Primary Magazine Slots */
 ADD_MAGAZINE("30Rnd_556x45_Stanag", 5);
-//ADD_MAGAZINE("30Rnd_556x45_StanagSD", 7);
+/*ADD_MAGAZINE("30Rnd_556x45_StanagSD", 7);*/
 ADD_MAGAZINE("ACE_30Rnd_556x45_T_Stanag", 1);
 
 /* ACE Ruck Magazine Slots */
