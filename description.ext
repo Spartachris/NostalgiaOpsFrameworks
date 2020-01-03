@@ -31,6 +31,7 @@ class Params {
 
 class Extended_PreInit_EventHandlers {
 	mission_preInit = "call compile preProcessFileLineNumbers 'core\boot.sqf'";
+    nos_preInit = "call compile preProcessFileLineNumbers 'nos\nos_preInit.sqf'";
 };
 
 class Mission {
@@ -38,3 +39,14 @@ class Mission {
 };
 
 /* DO NOT EDIT ABOVE THIS COMMENT */
+class Extended_InitPost_EventHandlers {
+    class CAManBase {
+        nos_set_skills = "_this call nos_ai_fnc_setSkills";
+        server_nos_disable_acre_spectator = "[_this select 0] call nos_spectator_fnc_disableAcreSpectatorLocal";
+    };
+};
+class Extended_Killed_EventHandlers {
+    class CAManBase {
+        nos_spectator_unit_killed = "_this call nos_spectator_fnc_unitKilledEvent";
+    };
+};
